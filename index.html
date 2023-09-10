@@ -7,7 +7,7 @@
     <title>Xtar Track Landing</title>
 </head>
 <body>
-    <h1>Federation Field Guide to aliens</h1>
+    <h1 data-splitting id="splitting" class="tracking-in-expand">Federation Field Guide to aliens</h1>
     <h2>Enter the name of an alien species below</h2>
 
     <p>On away missions, it is ital to know the basic facts and characteristics about the aaliens you will encountour. Enter the species name of your new friend (or foe) 
@@ -17,19 +17,21 @@
     <input type="text">
     <button>Click to get info</button>
 
-    <div>
-        <img src="" alt="Alien Image" id="alienImage">
-        <p id="alienCaption">Photo</p>
-    </div>
+    <div class="grid-container">
+        <ul>
+            <li><span>Species Name: </span><span id="alienName"></span></li>
+            <li><span>Homeworld: </span><span id="alienWorld"></span></li>
+            <li><span>Distinguishing Features: </span><span id="alienFeatures"></span></li>
+            <li><span>Interesting Fact(s): </span><span id="alienFacts"></span></li>
+            <li><span>Notable Examples: </span><span id="alienExamples"></span></li>
+        </ul>
 
-    <ul>
-        <li><span>Species Name: </span><span id="alienName"></span></li>
-        <li><span>Homeworld: </span><span id="alienWorld"></span></li>
-        <li><span>Distinguishing Features: </span><span id="alienFeatures"></span></li>
-        <li><span>Interesting Fact(s): </span><span id="alienFacts"></span></li>
-        <li><span>Notable Examples: </span><span id="alienExamples"></span></li>
-    </ul>
+        <div>
+            <img src="" alt="Alien Image" id="alienImage">
+            <p id="alienCaption">Photo</p>
+        </div>
+    </div>
     
-    <script src="main.js"></script>
+    <script src="main.js">Splitting(); </script>
 </body>
 </html>

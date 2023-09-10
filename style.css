@@ -1,3 +1,55 @@
 * {
     box-sizing: border-box;
+    font-family: 'Wix Madefor Display', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    
+    background: #111;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background: #111;
+}
+
+.tracking-in-expand {
+    color: #fff;
+    font-size: 4rem;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 800;
+    opacity: 0;
+    -webkit-box-reflect: below -14px linear-gradient(transparent 45%, white);
+    letter-spacing: 4px;
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

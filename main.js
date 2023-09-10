@@ -8,36 +8,15 @@ async function apiRequest() {
         console.log(data)
 
         document.getElementById('alienName').innerText = data.speciesName
-        document.getElementById('alienWorld').innerText = data.homeworld
+        document.getElementById('alienWorld').innerText = data.homeWorld
         document.getElementById('alienFeatures').innerText = data.features
-        document.getElementById('alienFacts').innerText = data.alienFacts
+        document.getElementById('alienFacts').innerText = data.interestingFacts
         document.getElementById('alienExamples').innerText = data.notableExamples
 
-        document.getElementById('alienImage').src = data.Image
+        document.getElementById('alienImage').src = data.image
         document.getElementById('alienCaption').innerText = data.speciesName
     } catch(error){
         console.log(error)
     }
 }
 
-
-// document.getElementById('getButton').addEventListener('click', apiRequest)
-
-// async function apiRequest(){
-//     const alienName = document.querySelector('input').value
-//     try{
-//         const response = await fetch(`https://api-xtar-trek-b72b6855941a.herokuapp.com/api/${alienName}`)
-//         const data = await response.json()
-
-//         console.log(data)
-//         document.getElementById('alienName').innerText = data.speciesName
-//         document.getElementById('alienWorld').innerText = data.homeworld
-//         document.getElementById('alienFeatures').innerText = data.features
-//         document.getElementById('alienFacts').innerText = data.interestingFact
-//         document.getElementById('alienExamples').innerText = data.notableExamples
-//         document.getElementById('alienImage').src = data.image
-//         document.getElementById('alienCaption').innerText = data.speciesName
-//     }catch(error){
-//         console.log(error)
-//     }
-// }
