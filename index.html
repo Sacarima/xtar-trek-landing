@@ -7,31 +7,44 @@
     <title>Xtar Track Landing</title>
 </head>
 <body>
-    <h1 data-splitting id="splitting" class="tracking-in-expand">Federation Field Guide to aliens</h1>
-    <h2>Enter the name of an alien species below</h2>
-
-    <p>On away missions, it is ital to know the basic facts and characteristics about the aaliens you will encountour. Enter the species name of your new friend (or foe) 
-        to obtai information about them</p>
-
-
-    <input type="text">
-    <button>Click to get info</button>
-
-    <div class="grid-container">
-        <ul>
-            <li><span>Species Name: </span><span id="alienName"></span></li>
-            <li><span>Homeworld: </span><span id="alienWorld"></span></li>
-            <li><span>Distinguishing Features: </span><span id="alienFeatures"></span></li>
-            <li><span>Interesting Fact(s): </span><span id="alienFacts"></span></li>
-            <li><span>Notable Examples: </span><span id="alienExamples"></span></li>
-        </ul>
-
-        <div>
-            <img src="" alt="Alien Image" id="alienImage">
-            <p id="alienCaption">Photo</p>
+    <div class="header-one">
+        <h1 data-splitting id="splitting" class="tracking-in-expand">Federation Field Guide to aliens</h1>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="sec-one">
+                <h2 class="header-two">Enter the name of an alien species below</h2>
+                <p>On away missions, it is ital to know the basic facts and characteristics about the aaliens you will encountour.</p>
+            </div>
+            <div class="sec-two">
+                <p>On away missions, it is ital to know the basic facts and characteristics about the aaliens you will encountour.</p>
+            <p>Enter the species name of your new friend (or foe) to obtain information about them</p>
+            </div>
+        </div>
+        <!-- <div class="second">
+        
+            <p>On away missions, it is ital to know the basic facts and characteristics about the aaliens you will encountour.</p>
+            <p>Enter the species name of your new friend (or foe) to obtain information about them</p>
+        </div> -->
+        <div class="flex-container">
+            <input type="text">
+            <button>Click to get info</button>
+        </div>
+        <div class="grid-container">
+            <ul>
+                <li><span>Species Name: </span><span id="alienName" class="one"></span></li>
+                <li><span>Homeworld: </span><span id="alienWorld" class="one"></span></li>
+                <li><span>Distinguishing Features: </span><span id="alienFeatures" class="one"></span></li>
+                <li><span>Interesting Fact(s): </span><span id="alienFacts" class="one"></span></li>
+                <li><span>Notable Examples: </span><span id="alienExamples" class="one"></span></li>
+            </ul>
+            <div>
+                <img src="https://img.freepik.com/free-photo/group-aliens_1048-3099.jpg?w=1800&t=st=1695547148~exp=1695547748~hmac=fd489f8cb4d51bda45fd7fb7b90ed84dbdbf85e036e3078aed47f8ac7d000822" alt="Alien Image" id="alienImage">
+                <p id="alienCaption">Alien</p>
+            </div>
         </div>
     </div>
     
-    <script src="main.js">Splitting(); </script>
+    <script src="main.js"></script>
 </body>
 </html>
