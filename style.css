@@ -13,6 +13,10 @@ font-family: 'Sedgwick Ave Display', cursive;
     padding: 0;
 }
 
+body {
+  
+}
+
 .container {
   width: min(90%, 85rem);
   margin-inline: auto;
@@ -80,12 +84,15 @@ p {
 li {
   line-height: 1.8;
   font-size: 1.2rem;
+  font-weight: 100;
 
 }
 
 .one {
   font-weight: bolder;
   margin-left: 5px;
+  font-family: 'Croissant One', cursive;
+  font-weight: 100;
 }
 
 input {
@@ -119,7 +126,7 @@ button {
 }
 
 li::marker {
-  color: rgb(140, 140, 140);
+  color: rgb(0, 0, 0);
 }
 
 @media (max-width: 600px) {
@@ -135,7 +142,7 @@ li::marker {
   button {
     border: 0;
     border-radius: 4px;
-    color: white;
+    color: #222;
     padding: 10px 10px;
     position: absolute;
     left: 65%;
